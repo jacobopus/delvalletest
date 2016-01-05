@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-            
+            <link href='https://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="css/metro.min.css">
             <link rel="stylesheet" href="css/metro-responsive.min.css">
             <link rel="stylesheet" href="css/metro-icons.min.css">
@@ -22,17 +22,18 @@
             
         <style>
             body{ } 
-            li a span{margin-right:0.5rem;}
+            span.mif-home, li a span{margin-right:0.5rem;}
             div.box span.mif-4x{margin-right:0.5rem;}
             .page-content{margin-top:1rem;}
             .banner-img{max-width:34%;}
             .centered{margin-left:auto;margin-right:auto;text-align: center;}
             .margin-bottom{margin-bottom:1rem;}
             .my-responsive-img{width:99%;height:auto;}
-            .little{min-height:100px}
+            .little{min-height:89px}
             .box{margin-bottom:1rem;}
             .sticky-label{font-size:1.12rem;}
             .margin-bottom{margin-bottom:1rem;}
+            .title-site{font-family: 'Neuton', georgia, serif;}
         </style>    
             
         </head>
@@ -57,10 +58,18 @@
                             </li>
                             <li><a href="#"><span class='mif-user-plus'></span>Admisión</a></li>
                             <li><a href="#"><span class='mif-calendar'></span>Calendario</a></li>
-                            <li><a href="#"><span class='mif-cogs'></span>Servicios</a></li>
+                            <li>
+                                <a href="#" class='dropdown-toggle'><span class='mif-cogs'></span>Servicios</a>
+                                <ul class="d-menu" data-role="dropdown">
+                                    <li><a href="#"><span class='mif-bus'></span>Transporte escolar</a></li>
+                                    <li><a href="#"><span class='mif-spoon-fork'></span>Alimentación</a></li>
+                                    <li><a href="#"><span class='mif-linux'></span>Uniforme institucional</a></li>
+                                </ul>
+                            
+                            </li>
                             <li><a href="#"><span class='mif-security'></span>Insignia</a></li>
                         </ul>
-                        <form class='app-bar-element'>
+                        <form class='app-bar-element place-right'>
                             <div class="input-control text ">
                                 <input type="text" name="q" placeholder="Buscar...">
                                 <button class="button"><span class="mif-search"></span></button>
@@ -77,7 +86,7 @@
                         <div class='row flex-just-sb'>
                         
                             <div class='cell size4 flex-just-start '>
-                                <div class='box centered padding10 bg-white'>
+                                <div class='box centered padding10 margin-bottom bg-white'>
 
                                     <img alt='' src='img/logo-redis-c.png' class='banner-img'/>
                                     <h1 class='title-site'>Colegio del Valle</h1>
@@ -85,17 +94,17 @@
                                 </div>
                             </div>
                             
-                            <div class='cell size2 flex-just-end'>
+                            <div class='cell size2'>
                                 <div class='box little padding10 bg-green centered fg-white flex-just-sb'>
                                     <h3 class='sticky-label'>Inicio de clases 29 de febrero</h3>
                                 </div>
                                 
-                                <div class='box little padding10 bg-darkGreen centered fg-white flex-just-sb'>
+                                <div class='box little padding10 bg-darkGreen centered fg-white'>
                                     <h3 class='sticky-label'>Información importante</h3>
                                 </div>                                
                             </div>
                             
-                            <div class='cell size2 flex-just-end'>
+                            <div class='cell size2'>
                                 <div class='box little padding10 centered bg-orange fg-white'>
                                     <h3 class='sticky-label'>Utiles escolares</h3>
                                 </div>
@@ -105,7 +114,7 @@
                                 </div>                                
                             </div>
                             
-                            <div class='cell size2 flex-just-end'>
+                            <div class='cell size2'>
                                 <div class='box little padding10 centered bg-cyan fg-white'>
                                     <h3 class='sticky-label'>Ficha de Postulación</h3>
                                 </div>
