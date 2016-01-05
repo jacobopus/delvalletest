@@ -23,17 +23,24 @@
         <style>
             body{ } 
             li a span{margin-right:0.5rem;}
+            .page-content{margin-top:1rem;}
+            .banner-img{max-width:34%;}
+            .centered{margin-left:auto;margin-right:auto;text-align: center;}
+            .margin-bottom{margin-bottom:1rem;}
+            .my-responsive-img{width:99%;height:auto;}
+            .little{}
+            .box{margin-bottom:1rem;}
+            .sticky-label{font-size:1.12rem;}
         </style>    
             
         </head>
-        <body class="metro bg-white">
-          
-            <header>
-                <nav class='app-bar fixed-top navy' data-role='appbar'>
+        <body class="metro bg-grayLighter">
+            <div>
+     
+                <header class='app-bar navy' data-role='appbar' data-flexclean="true">
                     <div class='container'>
-                        <a class="app-bar-element" href="#"><span class='mif-home'></span>Inicio</a>
-                        <span class="app-bar-divider"></span>
-                    
+                        
+                        <a class="app-bar-element" href="#"><span class='mif-home'></span>Inicio</a>                    
                         <ul class="app-bar-menu">
                             <li>
                                 <a href="#" class="dropdown-toggle"><span class='mif-library'></span>Colegio</a>
@@ -50,19 +57,65 @@
                             <li><a href="#"><span class='mif-calendar'></span>Calendario</a></li>
                             <li><a href="#"><span class='mif-cogs'></span>Servicios</a></li>
                             <li><a href="#"><span class='mif-security'></span>Insignia</a></li>
-                            <li><form>
-                                <div class="input-control text">
-                                    <input type="text" name="q" placeholder="Search...">
-                                    <button class="button"><span class="mif-search"></span></button>
-                                </div>
-                            </form></li>
                         </ul>
+                        <form class='app-bar-element'>
+                            <div class="input-control text ">
+                                <input type="text" name="q" placeholder="Search...">
+                                <button class="button"><span class="mif-search"></span></button>
+                            </div>
+                        </form>
                     </div>        
-                </nav>                
+                            
             </header>    
-            
-            <div>
             </div>
+            
+                <div class='container page-content'>
+                    <div class='flex-grid'>
+                    
+                        <div class='row flex-just-sb'>
+                        
+                            <div class='cell size4 flex-just-start '>
+                                <div class='box centered padding10 bg-white'>
+
+                                    <img alt='' src='img/logo-redis-c.png' class='banner-img'/>
+                                    <h1 class='title-site'>Colegio del Valle</h1>
+                                    <p class='slogan-site'>Poner slogan inteligente aqui</p>
+                                </div>
+                            </div>
+                            
+                            <div class='cell size2 flex-just-end'>
+                                <div class='box little padding10 bg-green centered fg-white flex-just-sb'>
+                                    <h3 class='sticky-label'>Inicio de clases 29 de febrero</h3>
+                                </div>
+                            </div>
+                            
+                            <div class='cell size2 flex-just-end'>
+                                <div class='box little padding10 centered bg-orange fg-white'>
+                                    <h3 class='sticky-label'>Utiles escolares</h3>
+                                </div>
+                            </div>
+                            
+                            <div class='cell size2 flex-just-end'>
+                                <div class='box little padding10 centered bg-cyan fg-white'>
+                                    <h3 class='sticky-label'>Ficha de Postulación</h3>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class='row'>
+                        
+                        </div>
+                        
+                        <div class='row'>
+                        
+                        </div>
+                    
+                    </div>
+                    
+                 
+                </div>
+            
             
             <footer>
             </footer>
